@@ -1,0 +1,33 @@
+.hero-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+
+    @media only screen and (min-width: 1256px) {
+        row-gap: 5px;
+        font-size: 30px;
+    }   
+}
+
+.hero-heading {
+    font-weight: 300;
+    font-size: 20px;
+    color: #98969b;
+
+    @media only screen and (min-width: 1256px) {
+        font-size: 25px;
+    }
+}
+
+.hero-subheading {
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 1.1;
+    color: white;
+
+    @media only screen and (min-width: 1265px) {
+        font-size: 48px;
+        line-height: 1.25;
+    }
+}
+

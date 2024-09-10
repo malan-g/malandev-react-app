@@ -1,0 +1,15 @@
+.hamburger-open:nth-child(1) {
+    transform: matrix(1, 0, 0, 1, 0, -3);
+}
+  
+.hamburger-open:nth-child(2) {
+    transform: matrix(1, 0, 0, 1, 0, 3);
+}
+  
+.hamburger-close:nth-child(1) {
+    transform: matrix(0.707107, 0.707107, -0.707107, 0.707107, 0, 1);
+}
+  
+.hamburger-close:nth-child(2) {
+    transform: matrix(0.707343, -0.706871, 0.706871, 0.707343, 0, 0.9369838);
+}

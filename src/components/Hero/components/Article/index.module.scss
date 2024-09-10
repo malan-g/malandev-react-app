@@ -1,0 +1,29 @@
+.article {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    padding: 20px 30px 40px 30px;
+
+    h3 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+}
+
+
+.article{
+    background-color: #292929;
+
+    h3 {
+        color: #ffffff;
+    }
+
+    p {
+        color: #6f7679;
+    }
+
+}
+  

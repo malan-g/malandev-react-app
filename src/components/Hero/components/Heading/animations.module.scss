@@ -1,0 +1,54 @@
+.hero-heading {
+    opacity: 0;
+    animation: heading-clip 600ms ease-out 300ms forwards,
+        fade-in 1s ease-out 300ms forwards;
+}
+
+.hero-subheading {
+    span {
+        overflow-y: clip;
+        display: inline-block;
+    }
+}
+
+.hero-token-clip {
+    transform: translateY(100%);
+    animation: fade-in 1.2s ease-out forwards,
+        token-clip 800ms cubic-bezier(0, 0.1, 0, 1) forwards;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+  }
+
+@keyframes heading-clip {
+    from {
+        transform: translateY(10%);
+    }
+    to {
+        transform: translate(0%);
+    }
+}
+  
+@keyframes token-clip {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes token-clip {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0%);
+    }
+}

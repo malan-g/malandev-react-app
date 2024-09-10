@@ -1,0 +1,25 @@
+.article {
+    opacity: 0;
+    transform: translateY(5%);
+    animation: fade-in 1.4s ease forwards, article-clip 700ms ease forwards;
+    animation-delay: 1s;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes article-clip {
+    from {
+      transform: translateY(5%);
+    }
+    to {
+      transform: translateY(0%);
+    }
+  }
+

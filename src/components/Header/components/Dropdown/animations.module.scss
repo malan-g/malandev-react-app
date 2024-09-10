@@ -1,0 +1,46 @@
+.plus-minus-open:nth-child(1) {
+    transform: matrix(1, 0, 0, 1, 0, 1.7);
+  }
+  
+  .plus-minus-open:nth-child(2) {
+    transform: matrix(1, 0, 0, 1, 0, 0);
+  }
+  
+  .plus-minus-close:nth-child(1) {
+    transform: matrix(1, 0, 0, 1, 0, 1.7);
+  }
+  
+  .plus-minus-close:nth-child(2) {
+    transform: rotate(90deg) matrix(1, 0, 0, 1, 0, 0);
+  }
+  
+  .dropdown {
+    transition: max-height 400ms ease-out;
+  }
+
+  .dropdown-expand {
+    animation: fade-in 500ms ease-out forwards 150ms;
+  }
+  
+  .dropdown-collapse {
+    animation: fade-out 400ms ease-out forwards;
+  }
+  
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+  

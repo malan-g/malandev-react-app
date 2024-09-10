@@ -1,0 +1,29 @@
+.hamburger {
+    position: relative;
+    display: grid;
+    height: 36px;
+    width: 36px;
+    margin-left: auto;
+    cursor: pointer;
+    z-index: 2;
+
+    @media only screen and (min-width: 1256px) {
+        display: none;
+    }
+}
+
+.line {
+    grid-area: 1/1;
+    align-self: center;
+    place-self: center;
+    width: 16px;
+    height: 1px;
+    background-color: #fff;
+    transition: 250ms ease-out;
+    z-index: 100;
+
+    @media only screen and (min-width: 1256px) {
+        display: none;
+    }
+}
+  

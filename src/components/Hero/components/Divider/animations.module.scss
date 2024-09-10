@@ -1,0 +1,24 @@
+.divider {
+    opacity: 0;
+    transform: translateX(-100%);
+    animation: enter-ltr 550ms ease-out forwards, fade-in 1.1s ease-out forwards;
+    animation-delay: 750ms;
+}
+ 
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+  }
+
+@keyframes enter-ltr {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0%);
+    }
+}
