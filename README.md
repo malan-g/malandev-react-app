@@ -1,13 +1,13 @@
 # Frontend code for malandev.com 
 
-This is a client-side React application for [malandev.com](https://malandev.com), It is currently in development.
+This is a client-side React application for [malandev.com](https://malandev.com), It is not complete.
 
 I'm building this application using:
 - React
 - React Router 
 - SASS modules & some Tailwind CSS
 
-Components are structured like so:
+Components are organized like so: 
 ```
 component/
 ├── index.jsx
@@ -19,5 +19,3 @@ component/
     ├── index.module.scss
     └── animations.module.scss
 ```
-
-
