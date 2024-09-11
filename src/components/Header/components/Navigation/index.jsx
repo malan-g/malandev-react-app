@@ -45,13 +45,13 @@ function Navigation() {
                                             menuItem.children.map((item) => (
                                                 <li key={item.label} className={`${addStyle["submenu-item"]} ${menuItem.label === activeItem ? loadAnimation["active"] : loadAnimation["inactive"]}`}
                                                     >
-                                                    {item.label}
+                                                        <a href={item.link}>{item.label}</a>
                                                 </li>
                                             )
                                         )}
                                     </ul>
                                 </>
-                            ) : (<a href="" onMouseEnter={handlePointerExit} className="">{menuItem.label}</a>)
+                            ) : (<a href={menuItem.link} onMouseEnter={handlePointerExit} className="">{menuItem.label}</a>)
                         }
                     </li>
                 ))
@@ -59,7 +59,7 @@ function Navigation() {
             {
                 socials.map((social) => (
                     <li key={social.label} onMouseEnter={handlePointerExit}>
-                        <a href={social.link} className="">
+                        <a href={social.link} className="" target="_blank">
                             {social.label}
                         </a>
                     </li>
@@ -70,7 +70,8 @@ function Navigation() {
                 <div></div>
             </div>
             <div onMouseEnter={handlePointerExit} 
-                 className={`${isActive && addStyle["navigation-menu-backdrop"]} ${isActive ? loadAnimation["place-backdrop"] : loadAnimation["remove-backdrop"]}`}
+                //  className={`${isActive && addStyle["navigation-menu-backdrop"]} ${isActive ? loadAnimation["place-backdrop"] : loadAnimation["remove-backdrop"]}`}
+                className={isActive && addStyle["navigation-menu-backdrop"]}
             >
             </div>
         </nav>

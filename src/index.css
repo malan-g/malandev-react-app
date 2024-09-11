@@ -10,4 +10,6 @@
 :root {
   background-color: #111;
   color: #fff;
+  display: flex;
+  flex-direction: column;
 }

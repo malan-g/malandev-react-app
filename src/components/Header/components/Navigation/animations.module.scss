@@ -16,36 +16,36 @@
     animation: fade-out 300ms ease-out forwards;
 }
 
-.place-backdrop {
-    animation: apply-blur 300ms ease-in forwards;
-}
+// .place-backdrop {
+//     animation: apply-blur 150ms ease-in forwards;
+// }
 
-.remove-backdrop {
-    animation: remove-blur 300ms ease-out forwards;
-}
+// .remove-backdrop {
+//     animation: remove-blur 150ms ease-in forwards;
+// }
 
 
-@keyframes apply-blur {
-    from {
-        backdrop-filter: blur(0px);
-        -webkit-backdrop-filter: blur(0px); // Add this for Safari
-    }
-    to {
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px); // Add this for Safari
-    }
-}
+// @keyframes apply-blur {
+//     from {
+//         backdrop-filter: blur(0px);
+//         -webkit-backdrop-filter: blur(0px); // Add this for Safari
+//     }
+//     to {
+//         backdrop-filter: blur(8px);
+//         -webkit-backdrop-filter: blur(8px); // Add this for Safari
+//     }
+// }
 
-@keyframes remove-blur {
-    from {
-        backdrop-filter: blur(8px);
-        -webkit-backdrop-filter: blur(8px); // Add this for Safari
-    }
-    to {
-        backdrop-filter: blur(0px);
-        -webkit-backdrop-filter: blur(0px); // Add this for Safari
-    }
-}
+// @keyframes remove-blur {
+//     from {
+//         backdrop-filter: blur(8px);
+//         -webkit-backdrop-filter: blur(8px); // Add this for Safari
+//     }
+//     to {
+//         backdrop-filter: blur(0px);
+//         -webkit-backdrop-filter: blur(0px); // Add this for Safari
+//     }
+// }
 
 @keyframes fade-in {
     from {
