@@ -1,13 +1,12 @@
-# Frontend code for malandev.com 
+# Context
+I built this client application to practice writing css transitions.
 
-This is a client-side React application for [malandev.com](https://malandev.com), It is not complete.
-
-I'm building this application using:
+I built it using:
 - React
 - React Router 
 - SASS modules & some Tailwind CSS
 
-Components are organized like so: 
+I've organized components like this:
 ```
 component/
 ├── index.jsx
